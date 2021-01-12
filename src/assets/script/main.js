@@ -139,9 +139,16 @@ function findWinner(player){
     }
     if (winner != null) {
         finishEvent();
-        alert("Ganador es: " +winner);
+        if (winner == "Jugador 1") {
+            alert("Ganador es: "+ document.getElementById("jugador1").innerHTML);
+            document.getElementById("winner").innerHTML = document.getElementById("jugador1").innerHTML;
+        }
+        if (winner == "Jugador 2") {
+            alert("Ganador es: "+ document.getElementById("jugador2").innerHTML);
+            document.getElementById("winner").innerHTML = document.getElementById("jugador2").innerHTML;
+        }
         document.getElementById("view_winner").style = "display:block;";
-        document.getElementById("winner").innerHTML = winner;
+        
     }
 }
 
