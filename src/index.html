@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Curriculum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Curriculum"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/styles/main.scss" />
+  </head>
+
+  <body>
+      <div class="title">
+        <h1 >Juego 3 en Raya</h1>
+      </div>
+    
+    <div class="game">
+        <div class="control">
+            <a href="#" id="comenzar" class="start_control"> Comenzar</a>
+            <a href="index.html" class="reset_control"> Reiniciar</a>
+            <div id="view_gamer" class="datosJugadores">
+                <div class="jugador">Jugador 1 es:<br> <span id="jugador1"></span></div>
+                <div>Jugador 2 es:<br> <span id="jugador2"></span></div>
+            </div>
+            <div id="view_winner" class="winner">
+                <p>El Ganador es: <span id="winner"></span></p>
+            </div>
+        </div>
+        
+        <div class="tablero">
+            
+            <div>
+                <img class="img_tablero" src="assets/images/tablero.png"/>
+            </div>
+            <div class="zonas">
+                <div id="00" class="skin_row row1"></div>
+                <div id="01" class="skin_row row1"></div>
+                <div id="02" class="skin_row row1"></div>
+               
+            </div>
+            <div class="zonas">
+                <div id="10" class="skin_row row2"></div>
+                <div id="11" class="skin_row row2"></div>
+                <div id="12" class="skin_row row2"></div>
+            </div>
+            <div class="zonas">
+                <div id="20" class="skin_row row3"></div>
+                <div id="21" class="skin_row row3"></div>
+                <div id="22" class="skin_row row3"></div>
+            </div>
+        </div>
+    </div>
+    
+
+  <script src="./assets/script/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
