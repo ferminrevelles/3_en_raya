@@ -17,17 +17,17 @@
 
 .game {
   display: flex;
-  width: 80%;
-  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .control {
   width: 40%;
-  height: 40vw;
   display: flex;
   justify-content: space-around;
-  background-color: lightgray;
   border-radius: 20px;
+  margin: auto;
 }
 
 .start_control,
@@ -35,11 +35,11 @@
   background-color: blue;
   text-align: center;
   text-decoration: none;
-  width: 13vw;
+  width: 30vw;
   height: 3vw;
   border-radius: 5px;
   padding: 1vw 1vw;
-  margin-top: 5vw;
+  margin: 5vw 2vw;
   font-size: 3vw;
   color: white;
   transition: background-color 2s;
@@ -50,76 +50,44 @@
   background-color: red;
 }
 
-.datosJugadores {
-  position: absolute;
-  margin-top: 12vw;
-  font-size: 3vw;
-  background-color: rgb(97, 91, 91);
-  color: rgb(226, 203, 164);
-  height: 15vw;
-  padding: 0% 2%;
-  display: none;
-  width: 25vw;
-  text-align: center;
-}
-
 .tablero {
-  width: 60%;
+  flex-wrap: wrap;
+  width: 30vw;
   text-align: center;
-}
-
-.img_tablero {
-  width: 80%;
-}
-
-.skin_row {
-  position: relative;
-  left: 2.5%;
-  width: 9vw;
-  height: 9vw;
-  border-radius: 50%;
-  background-color: green;
-}
-
-#jugador1 {
-  color: blue;
-  background-color: yellow;
-  padding: 0% 2%;
-  font-weight: bold;
-}
-
-#jugador2 {
-  color: red;
-  background-color: yellow;
-  padding: 0% 2%;
-  font-weight: bold;
-}
-
-.row1 {
-  top: -38.3vw;
-}
-
-.row2 {
-  top: -32.5vw;
-}
-
-.row3 {
-  top: -26.7vw;
 }
 
 .zonas {
-  width: 95%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 4% 0;
+}
+
+.borde-left {
+  border-left: solid 3px red;
+}
+
+.borde-bottom {
+  border-bottom: solid 3px red;
+}
+
+input {
+  text-align: center;
+  width: 80%;
+  height: 4vw;
+  font-size: 2vw;
+}
+
+.rect {
+  width: 50%;
 }
 
 .winner {
-  position: absolute;
-  margin-top: 28vw;
+  margin: auto;
   display: none;
   color: rgb(33, 142, 146);
   font-size: 2.7vw;
-  width: 20vw;
+  width: 30vw;
   text-align: center;
   font-weight: bold;
   animation: anim 10s infinite;

@@ -11,46 +11,58 @@
 
   <body>
       <div class="title">
-        <h1 >Juego 3 en Raya</h1>
+        <h1 >SUDOKU</h1>
       </div>
+      <div class="control">
+        <a href="#" id="comprobar" class="start_control"> Comprobar</a>
+        <a href="index.html" class="reset_control"> Reiniciar</a>
+       <div id="zonaContador" class="start_control"></div>
+    </div>
     
     <div class="game">
-        <div class="control">
-            <a href="#" id="comenzar" class="start_control"> Comenzar</a>
-            <a href="index.html" class="reset_control"> Reiniciar</a>
-            <div id="view_gamer" class="datosJugadores">
-                <div class="jugador">Jugador 1 es:<br> <span id="jugador1"></span></div>
-                <div class="jugador">Jugador 2 es:<br> <span id="jugador2"></span></div>
-            </div>
-            <div id="view_winner" class="winner">
-                <p>El Ganador es: <span id="winner"></span></p>
-            </div>
-        </div>
         
         <div class="tablero">
-            
-            <div>
-                <img class="img_tablero" src="assets/images/tablero.png"/>
+            <div class="zonas borde-bottom">
+                <div class="rect"><input type="text" maxlength="1" id="A0" placeholder=""/></input></div>
+                <div class="rect"><input id="A1" maxlength="1"></input></div>
+                <div class="rect"><input id="B0" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="B1" maxlength="1"></input></div>
             </div>
-            <div class="zonas">
-                <div id="00" class="skin_row row1"></div>
-                <div id="01" class="skin_row row1"></div>
-                <div id="02" class="skin_row row1"></div>
-               
+        </div>
+
+        <div class="tablero">
+            <div class="zonas borde-left borde-bottom">
+                <div class="rect"><input id="A2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="A3" maxlength="1"></input></div>
+                <div class="rect"><input id="B2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="B3" maxlength="1"></input></div>
             </div>
-            <div class="zonas">
-                <div id="10" class="skin_row row2"></div>
-                <div id="11" class="skin_row row2"></div>
-                <div id="12" class="skin_row row2"></div>
+        </div>
+    </div>
+    <div class="game">
+        
+        <div class="tablero">
+            <div class="zonas ">
+                <div class="rect"><input id="C0" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="C1" maxlength="1"></input></div>
+                <div class="rect"><input id="D0" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="D1" maxlength="1"></input></div>
             </div>
-            <div class="zonas">
-                <div id="20" class="skin_row row3"></div>
-                <div id="21" class="skin_row row3"></div>
-                <div id="22" class="skin_row row3"></div>
+        </div>
+
+        <div class="tablero">
+            <div class="zonas borde-left">
+                <div class="rect"><input id="C2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="C3" maxlength="1"></input></div>
+                <div class="rect"><input id="D2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="D3" maxlength="1"></input></div>
             </div>
         </div>
     </div>
     
+    <div id="view_winner" class="winner">
+        <p><span id="winner"></span></p>
+    </div>
 
   <script src="./assets/script/main.js"></script><!-- do not remove this line! -->
   </body>
